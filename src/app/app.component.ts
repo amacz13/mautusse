@@ -9,7 +9,12 @@ import {AuthenticationService} from "./services/authentication.service";
 export class AppComponent {
   title = 'Mautusse';
 
+  loggedIn = false;
+
   constructor(private authService: AuthenticationService) {
+    this.authService.loggedIn.subscribe(val => {
+      this.loggedIn = val;
+    })
   }
 
   doLogin() {

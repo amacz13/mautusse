@@ -12,6 +12,7 @@ import {AuthenticationService} from "./services/authentication.service";
 import {SETTINGS as AUTH_SETTINGS} from '@angular/fire/compat/auth';
 import {AngularFireModule} from "@angular/fire/compat";
 import {WordGridComponent} from "./components/word-grid/word-grid.component";
+import {LoginWithGoogleButtonComponent} from "./components/login-with-google-button/login-with-google-button.component";
 
 const routes: Routes = [];
 
@@ -20,7 +21,7 @@ const routes: Routes = [];
     AppComponent
   ],
   imports: [
-    BrowserModule, RouterModule.forRoot(routes), AngularFireModule.initializeApp(environment.firebase), provideFirebaseApp(() => initializeApp(environment.firebase)), provideAuth(() => getAuth()), provideDatabase(() => getDatabase()), provideFirestore(() => getFirestore()), WordGridComponent],
+    BrowserModule, RouterModule.forRoot(routes), AngularFireModule.initializeApp(environment.firebase), provideFirebaseApp(() => initializeApp(environment.firebase)), provideAuth(() => getAuth()), provideDatabase(() => getDatabase()), provideFirestore(() => getFirestore()), WordGridComponent, LoginWithGoogleButtonComponent],
   providers: [
     {provide: AUTH_SETTINGS, useValue: {appVerificationDisabledForTesting: true}},
     AuthenticationService,

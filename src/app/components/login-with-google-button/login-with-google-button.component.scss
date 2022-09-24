@@ -1,0 +1,25 @@
+div.button {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 48px;
+  border-radius: 8px;
+  cursor: pointer;
+
+  div.logo {
+    background-color: royalblue;
+    height: 100%;
+    border-radius: 8px;
+
+    svg {
+      margin: 4px;
+      height: 40px;
+    }
+  }
+
+  div.text {
+    color: royalblue;
+    padding: 4px;
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "mautusse-3e6f4": {
+      "hosting": {
+        "Mautusse": [
+          "mautusse-game"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "mautusse-3e6f4"
+  }
+}
