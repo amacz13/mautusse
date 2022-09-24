@@ -100,8 +100,21 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "Mautusse:build:production",
+            "firebaseProject": "mautusse-3e6f4",
+            "firebaseHostingSite": "mautusse-game"
+          }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "ad34808d-1544-42ca-a6b2-2dadd5929f9e"
   }
 }
